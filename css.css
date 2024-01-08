@@ -1,0 +1,76 @@
+  @import url('https://fonts.googleapis.com/css2?family=Hind&family=PT+Sans&display=swap');
+  body {
+      background-color: rgb(115, 63, 158);
+      font-family: 'Hind', sans-serif;
+      font-family: 'PT Sans', sans-serif;
+  }
+  
+  .mainStopwatch {
+      background-color: rgb(176, 118, 230);
+      border-radius: 15px;
+      width: 400px;
+      height: 250px;
+      font-weight: 800;
+      text-align: center;
+      margin: 100px auto;
+      padding-top: 60px;
+      font-size: 40px;
+      box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  }
+  /* animation */
+  
+  .container {}
+  
+  .container h2 {
+      padding: 0;
+      color: transparent;
+  }
+  
+  .container h2 span {
+      justify-content: center;
+      text-align: center;
+      font-size: 70px;
+      display: table-cell;
+      animation: animate 1s linear infinite;
+  }
+  
+  h2 span:nth-child(9n+1) {
+      animation-delay: 0.5s;
+  }
+  
+  h2 span:nth-child(9n+2) {
+      animation-delay: 1.25s;
+  }
+  
+  h2 span:nth-child(9n+3) {
+      animation-delay: 2s;
+  }
+  
+  h2 span:nth-child(9n+4) {
+      animation-delay: 2.15s;
+  }
+  
+  h2 span:nth-child(9n+5) {
+      animation-delay: 1s;
+  }
+  
+  h2 span:nth-child(9n+6) {
+      animation-delay: 1.5s;
+  }
+  
+  h2 span:nth-child(9n+7) {
+      animation-delay: 1.35s;
+  }
+  
+  h2 span:nth-child(9n+8) {
+      animation-delay: 0.65s;
+  }
+  
+  @keyframes animate {
+      0%,
+      100% {
+          color: #fff;
+          filter: blur(1px);
+          text-shadow: 0 0 10px #00b3ff, 0 0 20px #00b3ff, 0 0 40px #00b3ff, 0 0 80px #00b3ff, 0 0 120px #00b3ff, 0 0 200px #00b3ff, 0 0 300px #00b3ff, 0 0 400px #00b3ff;
+      }
+  }
